@@ -6,34 +6,42 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<style type="text/css">
 			body {
-				background-color: #FFFFFF;
-				color: #333333;
+				font-family: Arial, sans-serif;
 				margin: 0;
 				padding: 0;
+				line-height: 1.6;
+				display: flex;
+				flex-direction: column;
+				min-height: 100vh;
+				background-color: #f2f6fb;
+				color: #333333;
 			}
-			#page-wrapper {
-				height: 100%;
-				width: 100%;
-				max-width: 950px;
-				margin: auto;
-			}
-			#img-wrapper {
-				padding-top: 20px;
-				padding-bottom: 10px;
+			header {
+				background: #3a6ea5;
+				color: #fff;
+				padding: 1rem 0;
 				text-align: center;
-				border-bottom: 1px solid #006633;
 			}
-			#footer-wrapper {
-				width: 100%;
-				max-width: 950px;
-				margin: auto;
-				text-align: center;
-			}			
+			footer {
+            background-color: #2b4b6d;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: auto;
+        	}
 			a {
-				color: #006633;
+				color: #fff;
 			}
-			#header-container {
-				text-align: center;
+			a:hover {
+				color: #2d87b0
+			}
+			img {
+				display: block;
+				margin: 1rem auto;
+				max-width: 100%;
+				height: auto;
+				border: 5px solid #5e8f99;
+				border-radius:10px;
 			}
 		</style>
 		<link rel="icon" type="image/png" href="data:image/png;base64,
@@ -42,20 +50,15 @@
 		<script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
-		<div id="page-wrapper">
-			<div id="header-wrapper">
-				<header>
-					<div id="header-container">
-						<h1>Brian Zielinski's Personal Homepage</h1>
-						<div id="img-wrapper">
-							<a href="http://www.uncc.edu">
-								<img src="itis3135/images/mepicture.JPG" alt="Picture of Brian Zielinski" width="25%" height="25%">
-							</a>
-						</div> <!-- /#logo-wrapper -->
-					</div> <!-- /#header-container -->
-				</header>
-			</div> <!-- /#header-wrapper -->
-		</div> <!-- /#page-wrapper -->
+		<header>
+			<h1>Brian Zielinski's Personal Homepage</h1>
+			<p>Links to everything!</p>
+		</header>
+		<div id="img-wrapper">
+			<a href="http://www.uncc.edu">
+				<img id="img" src="itis3135/images/mepicture.JPG" alt="Picture of Brian Zielinski" width="25%" height="25%">
+			</a>
+		</div>
 		<footer id="footer-wrapper">
 			<p><a href = "itis3135/">ITIS 3135 Site</a> | <a href = "https://github.com/Bzombee">Github.com</a> | <a href = "https://bzombee.github.io/">Github.io page</a> | <a href = "https://webpages.charlotte.edu/bzielins/">CLT Webspace</a> | <a href = "https://www.linkedin.com/in/brian-zielinski/">Linkedin</a></p>
 		</footer>
