@@ -14,37 +14,68 @@
 				flex-direction: column;
 				min-height: 100vh;
 				background-color: #f2f6fb;
-				color: #333333;
+				color: #333;
 			}
-			h2, p {
-				text-align: center;
-			}
+
 			header {
 				background: #3a6ea5;
 				color: #fff;
-				padding: 1rem 0;
+				padding: 1rem;
 				text-align: center;
 			}
-			footer {
-            background-color: #2b4b6d;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: auto;
-        	}
-			a {
-				color: #fff;
+
+			main {
+				flex: 1;
+				max-width: 800px;
+				margin: 20px auto;
+				padding: 20px;
+				background: #fff;
+				border-radius: 10px;
+				box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 			}
-			a:hover {
-				color: #2d87b0
+
+			h2, p {
+				text-align: center;
 			}
+
+			figure {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				margin: 20px auto;
+				max-width: 80%;
+			}
+
 			img {
 				display: block;
-				margin: 1rem auto;
-				max-width: 100%;
+				width: 100%;
+				max-width: 500px;
 				height: auto;
-				border: 5px solid #5e8f99;
-				border-radius:10px;
+				border-radius: 10px;
+			}
+
+			figcaption {
+				text-align: center;
+				margin-top: 10px;
+				font-size: 0.9em;
+				color: #555;
+			}
+
+			footer {
+				background: #2b4b6d;
+				color: #fff;
+				text-align: center;
+				padding: 1rem;
+				margin-top: auto;
+			}
+
+			a {
+				color: #fff;
+				text-decoration: none;
+			}
+
+			a:hover {
+				color: #2d87b0;
 			}
 		</style>
 		<link rel="icon" type="image/png" href="data:image/png;base64,
@@ -60,16 +91,27 @@
 		<main>
 			<h2> Personal Homepage</h2>
 			<p>Links to everything down below</p>
-			<div id="img-wrapper">
-				<a href="http://www.uncc.edu">
+			<figure>
+				<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
 					<img id="img" src="itis3135/images/mepicture.JPG" alt="Picture of Brian Zielinski" width="25%" height="25%">
 				</a>
-			</div>
+			</figure>
+			<figcaption>Do not click on the picture</figcaption>
 		</main>
 		<footer id="footer-wrapper">
-			<p><a href = "itis3135/">ITIS 3135 Site</a> | <a href = "https://github.com/Bzombee">Github.com</a> | <a href = "https://bzombee.github.io/">Github.io page</a> | <a href = "https://webpages.charlotte.edu/bzielins/">CLT Webspace</a> | <a href = "https://www.linkedin.com/in/brian-zielinski/">Linkedin</a></p>
+			<nav>
+				<a href = "itis3135/">ITIS 3135 Site</a>
+				||
+				<a href = "https://webpages.charlotte.edu/bzielins/">CLT Webspace</a>
+				|| 
+				<a href = "https://github.com/Bzombee/Bzombee.github.io">Github</a>
+				||
+				<a href = "https://bzombee.github.io/">Github.io</a>
+				||
+				<a href = "https://www.linkedin.com/in/brian-zielinski/">LinkedIn</a>
+			</nav>
 			<p>
-				<a href="https://validator.w3.org/check?uri=referer" target="_blank">HTML Validation</a> | 
+				<a href="https://validator.w3.org/check?uri=referer" target="_blank">HTML Validation</a> || 
 				<a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank">CSS Validation</a>
 			</p>
 		</footer>
