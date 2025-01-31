@@ -1,13 +1,20 @@
 body {
-    background-color: gray;
+    background-color: #f2f6fb;
+    color: #333;
     text-align: center;
-    color: white;
-    font-family: monospace;
+    font-family: Arial, sans-serif;
     font-size: 125%;
 }
 
+header {
+    background: #3a6ea5;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
 a {
-    color: white;
+    color: #333;
     text-decoration: none;
 }
 
@@ -32,4 +39,19 @@ h2 {
 
 ul ul{
     list-style: circle;
+}
+
+header nav a {
+    color: white;
+}
+
+.validation-img {
+    border: 0;
+    width: 88px;
+    height: 31px;
+}
+
+#img {
+    width: 25%;
+    height: 25%;
 }
