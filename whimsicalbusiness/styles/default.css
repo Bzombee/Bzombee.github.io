@@ -1,7 +1,6 @@
-/* Global Styles */
 body {
-    background-color: #A0A05A; /* Slate Gray with Zebra Stripe Patterns */
-    color: #1A1A1A; /* Bold Black for readability */
+    background-color: #A0A05A;
+    color: #1A1A1A;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -9,10 +8,10 @@ body {
 
 /* Header & Navigation */
 header {
-    background-color: #3D6B2F; /* Jungle Green */
+    background-color: #3D6B2F;
     padding: 20px;
     text-align: center;
-    color: #F5F5F5; /* Ivory White */
+    color: #F5F5F5;
     font-size: 24px;
     font-weight: bold;
 }
@@ -20,13 +19,13 @@ header {
 nav {
     display: flex;
     justify-content: center;
-    background-color: #2E5323; /* Darker Jungle Green for contrast */
+    background-color: #2E5323;
     padding: 10px;
     gap: 15px;
 }
 
 nav a {
-    color: #F5F5F5; /* Ivory White */
+    color: #F5F5F5;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
@@ -36,11 +35,10 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #C25E24; /* Burnt Orange Hover Effect */
+    background-color: #C25E24;
     color: #FFFFFF;
 }
 
-/* Hero Section */
 .hero {
     background: url('../images/buffzebra2.webp') center/cover no-repeat;
     width: 100%;
@@ -51,36 +49,35 @@ nav a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #F5F5F5; /* Ivory White */
+    color: #F5F5F5;
     font-size: 36px;
     font-weight: bold;
     box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.3);
 }
 
 .heroheading {
-    font-size: 48px;
+    font-size: 5vw;
     color: #FFFFFF;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 .hero p {
-    font-size: 20px;
+    font-size: 2.5vw;
     font-style: italic;
     color: #F5F5F5;
     max-width: 80%;
 }
 
 .imagetxt {
-    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
     border-radius: 5px;
-    display: inline-block; /* Prevent full-width background */
+    display: inline-block;
 }
 
-/* Buttons */
 .button {
-    background-color: #C25E24; /* Burnt Orange */
-    color: #F5F5F5; /* Ivory White */
+    background-color: #C25E24;
+    color: #F5F5F5;
     padding: 15px 30px;
     border: none;
     font-size: 18px;
@@ -90,23 +87,21 @@ nav a:hover {
 }
 
 .button:hover {
-    background-color: #D4A055; /* Golden Savannah */
-    color: #1A1A1A; /* Bold Black */
+    background-color: #D4A055;
+    color: #1A1A1A;
 }
 
-/* Footer */
 footer {
-    background-color: #2E5323; /* Darker Jungle Green */
-    color: #F5F5F5; /* Ivory White */
+    background-color: #2E5323;
+    color: #F5F5F5;
     text-align: center;
     padding: 20px;
     margin-top: 30px;
     font-size: 16px;
 }
 
-/* Content Sections */
 .main-content {
-    background-color: #F5F5F5; /* Ivory White */
+    background-color: #F5F5F5;
     padding: 30px;
     margin: 20px auto;
     max-width: 900px;
@@ -114,19 +109,18 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Links */
 a {
-    color: #C25E24; /* Burnt Orange */
+    color: #C25E24;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #D4A055; /* Golden Savannah */
+    color: #D4A055;
 }
 
 .about-section {
-    background-color: #F5F5F5; /* Ivory White */
+    background-color: #F5F5F5;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -137,13 +131,13 @@ a:hover {
 }
 
 .about-image {
-    width: 40%; /* Adjust as needed */
+    width: 40%;
     max-width: 400px;
     border-radius: 10px;
 }
 
 .about-text {
-    width: 55%; /* Adjust as needed */
+    width: 55%;
     font-size: 18px;
     color: #1A1A1A;
 }
