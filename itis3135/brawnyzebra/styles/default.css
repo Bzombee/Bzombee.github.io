@@ -110,13 +110,13 @@ footer {
 }
 
 a {
-    color: #E07A36;
+    color: #f7f300;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #D4A055;
+    color: #cbc80e;
 }
 
 .about-section {
@@ -140,4 +140,8 @@ a:hover {
     width: 55%;
     font-size: 18px;
     color: #1A1A1A;
+}
+
+h2 {
+    font-size: 1.5rem;
 }
