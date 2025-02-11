@@ -1,25 +1,25 @@
 body {
-    background-color: #f2f6fb;
-    color: #333;
+    background-color: #F5E6D3;
+    color: #2A2A2A;
     text-align: center;
     font-family: Arial, sans-serif;
     font-size: 125%;
 }
 
 header {
-    background: #3a6ea5;
+    background: #9C4221;
     color: #fff;
     padding: 1rem;
     text-align: center;
 }
 
 a {
-    color: #333;
+    color: #B85030;
     text-decoration: none;
 }
 
 a:hover {
-    color: blue;
+    color: #D99E32;
     text-decoration: underline;
 }
 
@@ -37,7 +37,7 @@ h2 {
     text-align: left;
 }
 
-ul ul{
+ul ul {
     list-style: circle;
 }
 
@@ -54,4 +54,8 @@ header nav a {
 #img {
     width: 35vw;
     margin-bottom: 15px;
+}
+
+nav {
+    padding: 5px;
 }
