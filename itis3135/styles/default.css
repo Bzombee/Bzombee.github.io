@@ -51,11 +51,16 @@ header nav a {
     height: 31px;
 }
 
-#img {
-    width: 35vw;
+img {
     margin-bottom: 15px;
 }
 
 nav {
     padding: 5px;
+}
+
+#validation-link-html,
+#validation-link-css {
+    text-decoration: none; /* Removes underline */
+    display: inline-block; /* Ensures they are treated as block-like elements */
 }
