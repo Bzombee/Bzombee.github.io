@@ -3,19 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Brian Zielinski || ITIS 3135 || Homepage</title>
+        <title>Brawny Zebra Safari | About</title>
         <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="styles/default.css">
     </head>
     <body>
         <header>
-            <h1>Brawny Zebra Safari</h1>
-            <h2><em>The Wild, Strong, and Striped Adventure!</em></h2>
-            <nav>
-                <a href="./index.html">Home</a>
-                <a href="./about.html">About</a>
-                <a href="../">ITIS 3135</a>
-            </nav>
+            <div data-include="components/header.html"></div>
         </header>
     
         <section class="about-section">
@@ -38,17 +32,12 @@
             <p>At Brawny Zebra Safari, we believe that adventure should be both exhilarating and unforgettable. So saddle up (figuratively, of course—our zebras are too buff for saddles) and let’s explore the wild, one flex at a time.</p>
         </main>
         <footer>
-            <p>Page Built by <a href="zielinskidesignfirm.biz/">Zielinski Design Firm</a> &copy; 2025, Certified in <a href="https://www.freecodecamp.org/certification/BZombee/responsive-web-design">Responsive Web Design</a></p>
-            <a href="https://validator.w3.org/check?uri=referer" id="validation-link-html">
-                <img src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!" class="validation-img">
-            </a>
-            <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation-link-css">
-                <img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" class="validation-img">
-            </a>            
+            <div data-include="components/footer.html"></div>
         </footer>
         <script>
             document.getElementById("validation-link-html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
                     document.getElementById("validation-link-css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
-        </script>  
+        </script>
+            <script src="scripts/include.js"></script>   
     </body>
 </html>
