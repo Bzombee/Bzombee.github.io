@@ -33,7 +33,7 @@ h2 {
     text-align: center;
 }
 
-#bullet-points {
+.bullet-points {
     text-align: left;
 }
 
@@ -63,4 +63,8 @@ nav {
 #validation-link-css {
     text-decoration: none; /* Removes underline */
     display: inline-block; /* Ensures they are treated as block-like elements */
+}
+
+.webeval_section {
+    border-bottom: solid 2px black;
 }
