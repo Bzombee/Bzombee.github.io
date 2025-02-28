@@ -23,6 +23,30 @@ a:hover {
     text-decoration: underline;
 }
 
+.bullet-points {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    list-style-position: inside;
+    padding: 0;
+}
+
+ul ul {
+    list-style: circle;
+}
+
+table {
+    width: 75%;
+    border-collapse: collapse;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+
 main {
     text-align: center;
     max-width: 1000px; 
@@ -32,14 +56,6 @@ main {
 
 h2 {
     text-align: center;
-}
-
-.bullet-points {
-    text-align: left;
-}
-
-ul ul {
-    list-style: circle;
 }
 
 header nav a {
@@ -68,6 +84,42 @@ nav {
 
 .webeval_section {
     border-bottom: solid 2px black;
+}
+
+.better-table table {
+    min-width: 80%;
+    max-width: 90%;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.better-table th, 
+.better-table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+.better-table figcaption {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.better-table thead tr {
+    background-color: #333;
+    color: white;
+}
+
+.better-table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.better-table tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.better-table .total-row th {
+    text-align: right;
 }
 
 /* Mobile Devices */

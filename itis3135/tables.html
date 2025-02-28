@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Brian Zielinski Brawny Zebra || ITIS 3135 || HTML Tables</title>
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles/default.css">
+    </head>
+    <body>
+        <header>
+            <div data-include="components/header.html"></div>
+        </header>
+        <main>
+            <h2>HTML Tables - Company</h2>
+            <h3>My Tabular Data</h3>
+            <div class="bullet-points">
+                <ol>
+                    <li>Brian Zielinski, bzielins@charlotte.edu, 50</li>
+                    <li>Anne Betty, abetty@gmail.com, 40</li>
+                    <li>Charlie Dirth, cdirth@gmail.com 30</li>
+                    <li>Edward Flumpkin, eflumpkin@gmail.com, 20</li>
+                    <li>Gerald Hawthorn, ghawthorn@gmail.com, 10</li>
+                    <li>Isabella Joyce, ijoyce@gmail.com, 5</li>
+                    <li>Katie Lopez, klopez@gmail.com, 1</li>
+                </ol>
+            </div>
+            <h3>Employee Data in Simple Table</h3>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Years of Service</th>
+                </tr>
+                <tr>
+                    <td>Brian Zielinski</td>
+                    <td>bzielins@charlotte.edu</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>Anne Betty</td>
+                    <td>abetty@gmail.com</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>Charlie Dirth</td>
+                    <td>cdirth@gmail.com</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>Edward Flumpkin</td>
+                    <td>eflumpkin@gmail.com</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Gerald Hawthorn</td>
+                    <td>ghawthorn@gmail.com</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Isabella Joyce</td>
+                    <td>ijoyce@gmail.com</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Katie Lopez</td>
+                    <td>klopez@gmail.com</td>
+                    <td>1</td>
+                </tr>
+              </table>
+              <h3>Employee Data in Complex Table</h3>
+              <div class="better-table">
+                <figure>
+                    <figcaption>Employee Information</figcaption>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th id="category">Category</th>
+                                <th id="name">Name</th>
+                                <th id="email">Email</th>
+                                <th id="years">Years of Service</th>
+                                <th id="salary">Monthly Salary</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td headers="category" rowspan="1">CEO</td>
+                            <td headers="name">Brian Zielinski</td>
+                            <td headers="email">bzielins@charlotte.edu</td>
+                            <td headers="years">50</td>
+                            <td headers="salary">$612085351.01</td>
+                        </tr>
+                        <tr>
+                            <td headers="category" rowspan="2">Executives</td>
+                            <td headers="name">Anne Betty</td>
+                            <td headers="email">abetty@gmail.com</td>
+                            <td headers="years">40</td>
+                            <td headers="salary">$11422454.45</td>
+                        </tr>
+                        <tr>
+                            <td headers="name">Charlie Dirth</td>
+                            <td headers="email">cdirth@gmail.com</td>
+                            <td headers="years">30</td>
+                            <td headers="salary">$1273265.23</td>
+                        </tr>
+                        <tr>
+                            <td headers="category" rowspan="2">Marketing</td>
+                            <td headers="name">Edward Flumpkin</td>
+                            <td headers="email">eflumpkin@gmail.com</td>
+                            <td headers="years">20</td>
+                            <td headers="salary">$10230.50</td>
+                        </tr>
+                        <tr>
+                            <td headers="name">Gerald Hawthorn</td>
+                            <td headers="email">ghawthorn@gmail.com</td>
+                            <td headers="years">10</td>
+                            <td headers="salary">$1630.73</td>
+                        </tr>
+                        <tr>
+                            <td headers="category" rowspan="2">Technology</td>
+                            <td headers="name">Isabella Joyce</td>
+                            <td headers="email">ijoyce@gmail.com</td>
+                            <td headers="years">5</td>
+                            <td headers="salary">$10000.50</td>
+                        </tr>
+                        <tr>
+                            <td headers="name">Katie Lopez</td>
+                            <td headers="email">klopez@gmail.com</td>
+                            <td headers="years">1</td>
+                            <td headers="salary">$123.45</td>
+                        </tr>
+                        <tr>
+                            <th colspan="3">Total Years of Service</th>
+                            <td headers="years">156</td>
+                            <td headers="salary">$624,802,055.87</td>
+                        </tr>
+                      </table>
+                </figure>
+              </div>
+        </main>
+        <footer>
+            <div data-include="components/footer.html"></div>
+        </footer>
+        <script>
+            document.getElementById("validation-link-html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+                    document.getElementById("validation-link-css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>
+        <script src="scripts/include.js"></script>  
+    </body>     
+</html>
