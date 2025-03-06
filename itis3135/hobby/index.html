@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Video Games Hobby Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            font-size: 1.25em;
+            padding: 10px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 4em;
+            font-weight: bold;
+            color: #ff7b00;
+        }
+
+        main {
+            margin: 0 auto;
+            align-items: center;
+            gap: 50px;
+            padding: 40px 10%;
+        }
+
+        section {
+            display: none; /* Hide all sections by default */
+            margin-bottom: 40px;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .active {
+            display: block; /* Show only active section */
+        }
+
+        h2 {
+            color: #222;
+            font-size: 2.2em;
+            margin-bottom: 15px;
+            font-weight: 600;
+            border-bottom: 3px solid #ff7b00;
+            padding-bottom: 5px;
+        }
+
+        h3 {
+            color: #555;
+            font-size: 1.6em;
+            margin-bottom: 12px;
+            font-weight: 500;
+        }
+
+        p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            color: #444;
+        }
+
+        em {
+            font-style: italic;
+            color: #666;
+        }
+
+        blockquote {
+            background-color: #f9f9f9;
+            border-left: 5px solid #ff7b00;
+            padding: 15px 20px;
+            margin: 20px 0;
+            font-style: italic;
+            font-size: 1.2em;
+            color: #555;
+            border-radius: 8px;
+        }
+
+        fieldset {
+            border: 2px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #fafafa;
+        }
+
+        legend {
+            font-weight: bold;
+            color: #333;
+            font-size: 1.3em;
+        }
+
+        label {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            display: block;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            margin-bottom: 20px;
+            border-radius: 5px;
+            width: 100%;
+            font-size: 1em;
+            color: #333;
+            background-color: #fafafa;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus {
+            border-color: #ff7b00;
+            outline: none;
+        }
+
+        button {
+            background-color: #ff7b00;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #e25c00;
+        }
+
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9em;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        a {
+            color: #ff7b00;
+            text-decoration: none;
+            font-weight: normal;
+            transition: color 0.3s ease;
+        }
+
+        main a {
+            color: #8A4300;
+            text-decoration: none;
+            font-weight: normal;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #e25c00;
+        }
+
+        a:active {
+            color: #cc4e00;
+        }
+
+        footer a {
+            color: #ff7b00;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #e25c00;
+        }
+
+        footer a:active {
+            color: #cc4e00;
+        }
+
+        footer p {
+            color: white;
+        }
+
+        footer em {
+            color: white;
+        }
+
+    </style>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+        <h1>Video Games</h1>
+        <nav>
+            <a href="#" onclick="showSection('what')">What</a> ⛏ 
+            <a href="#" onclick="showSection('who')">Who</a> ⛏ 
+            <a href="#" onclick="showSection('when')">When</a> ⛏ 
+            <a href="#" onclick="showSection('where')">Where</a> ⛏ 
+            <a href="#" onclick="showSection('why')">Why</a> ⛏ 
+            <a href="#" onclick="showSection('how')">How</a> ⛏ 
+            <a href="#" onclick="showSection('ai')">AI Prompts</a>
+        </nav>
+    </header>
+    <main>
+        <section id="who">
+            <h2>Who</h2>
+            <figure>
+                <img src="./images/whoimage.jpg" alt="brian zielinski">
+                <figcaption>Picture of me, a serious gamer</figcaption>
+            </figure>
+            <p>I've been passionate about video games for as long as I can remember. What started as casual fun turned into a deep appreciation for game design, storytelling, and competitive play. Over the years, I've explored countless titles across different platforms, from classic retro games to cutting-edge virtual reality experiences. Video games are more than just a hobby for me—they're a way to unwind, connect with others, and even learn new skills. <em>(Not in my own words but it still describes me)</em></p>
+            <h3>Get in Touch if You Want To Play</h3>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="first-name">Enter Your First Name:</label>
+                <input id="first-name" name="first-name" type="text" required>
+                <label for="last-name">Enter Your Last Name:</label>
+                <input id="last-name" name="last-name" type="text" required>
+                <label for="email">Enter Your Email:</label>
+                <input id="email" name="email" type="email" required>
+                <button type="submit">Submit</button>
+            </fieldset>  
+        </section>
+        <section id="what" class="active">
+            <h2>What</h2>
+            <figure>
+                <img src="./images/whatimage.jpg" alt="A zoom in on the left shift key on a keyboard but that key says Video Games">
+                <figcaption>What are video games?</figcaption>
+            </figure>
+            <p><em>Video games by <a href="http://www.nyphotographic.com/">Nick Youngson</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a></em></p>
+            <p>Video games are an immersive and interactive form of entertainment that spans various genres, platforms, and experiences. From fast-paced action games to deep, story-driven RPGs, video games offer something for everyone. Whether playing solo, competing online, or enjoying cooperative adventures with friends, gaming provides endless entertainment, skill development, and social interaction.</p>
+            <blockquote>Every age has its storytelling form, and video gaming is a huge part of our culture. You can ignore or embrace video games and imbue them with the best artistic quality. People are enthralled with video games in the same way as other people love the cinema or theatre. -Andy Serkis</blockquote>
+        </section>
+        <section id="when">
+            <h2>When</h2>
+            <figure>
+                <img src="./images/whenimage.jpg" alt="A person playing a game at a desk">
+                <figcaption>Someone happily enjoying gaming in the evening</figcaption>
+            </figure>
+            <p><em><a href="https://commons.wikimedia.org/wiki/File:Person_playing_videogames_(52001476290).jpg">LG전자</a>, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>, via Wikimedia Commons</em></p>
+            <p>The best time to play video games depends on personal schedules and preferences. Some enjoy gaming late at night for a quiet, immersive experience, while others prefer playing on weekends with friends. Competitive gamers often practice during peak online hours when ranked matches are most active. Seasonal gaming events, like holiday sales and in-game festivals, also bring exciting limited-time content to explore.</p>
+            <h3>When Do You Play Video Games?</h3>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="time-enter">Enter the Time You Play:</label>
+                <input id="time-enter" name="time-enter" type="text" required>
+                <button type="submit">Submit</button>
+            </fieldset>
+        </section>
+        <section id="where">
+            <h2>Where</h2>
+            <figure>
+                <img src="./images/whereimg.jpg" alt="Example computer gaming setup">
+                <figcaption>Example computer gaming setup.</figcaption>
+            </figure>
+            <p><em><a href="https://commons.wikimedia.org/wiki/File:Zxrofnbr_gaming_Setup.jpg#metadata">Unknown author</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC BY 4.0</a>, via Wikimedia Commons</em></p>
+            <p>Gaming can be enjoyed anywhere, but the best experience comes from a well-equipped gaming setup. Whether it’s a cozy console setup in the living room, a high-performance PC gaming station, or even a portable device for gaming on the go, the environment plays a crucial role. Gaming cafés and esports arenas provide social and competitive experiences, while virtual reality spaces create immersive worlds like never before.</p>
+            <figure>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d414126.3727661565!2d-78.6895752!3d35.815586!3m2!1i1024!2i768!4f13.1!2m1!1swhere%20to%20play%20video%20games%20near%20me!5e0!3m2!1sen!2sus!4v1741208600658!5m2!1sen!2sus" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <figcaption>Places to play near you</figcaption>
+            </figure>
+        </section>
+        <section id="why">
+            <h2>Why</h2>
+            <figure>
+                <img src="./images/whyimage.jpg" alt="Boys playing a video game at home">
+                <figcaption>Boys playing a video game at home.</figcaption>
+            </figure>
+            <p><em><a href="https://commons.wikimedia.org/wiki/File:Universum_TV_Multispiel_2006.jpg">Shadowgate</a>, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>, via Wikimedia Commons</em></p>
+            <p>Video games offer numerous benefits beyond entertainment. They improve problem-solving skills, hand-eye coordination, and strategic thinking. Many games encourage teamwork, communication, and creativity, making them valuable learning tools. Studies have even shown that video games can reduce stress and enhance cognitive abilities. Whether for relaxation, competition, or storytelling, gaming is a rewarding hobby that continues to grow in popularity worldwide.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/GKMGecZPdjE?cc_load_policy=1" 
+            title="YouTube video player"  
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+            </iframe>
+        </section>
+        <section id="how">
+            <h2>How</h2>
+            <figure>
+                <img src="./images/howimage.jpg" alt="Gaming platforms in a cartoonish manner">
+                <figcaption>Different platforms to play games on</figcaption>
+            </figure>
+            <p><em><a href="https://www.deviantart.com/ry-spirit/art/VIDEOGAMES-969765227">Ry-Sprit</a>, <a href="https://creativecommons.org/licenses/by-nc-nd/3.0/deed.en">CC BY 3.0</a>, via Wikimedia Commons</em></p>
+            <p>Getting started with video games is easier than ever, thanks to the wide variety of options available. Beginners can start with free-to-play titles or classic games with simple mechanics. Choosing the right platform—whether a console, PC, or mobile device—is essential for the best experience. Additionally, watching tutorials, reading reviews, and joining gaming communities can help newcomers find the right games and improve their skills over time.</p>
+            <p>Devices you can play on</p>
+            <ul>
+                <li>Computer (PC)</li>
+                <li>Mobile device</li>
+                <li>Xbox</li>
+                <li>Playstation</li>
+                <li>Nintendo Switch</li>
+            </ul>
+        </section>
+        <section id="ai">
+            <h2>AI Prompts</h2>
+            <figure>
+                <img src="./images/aipromptimg.png" alt="ChatGPT Icon">
+                <figcaption>ChatGPT Icon</figcaption>
+            </figure>
+            <p><em><a href="https://commons.wikimedia.org/wiki/File:ChatGPT-Logo.png">Johnlearningwiki</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons</em></p>
+            <p>Prompts</p>
+            <ul>
+                <li>For each required section (minus the AI section), write me a paragraph for the hobby of video games</li>
+                <li>Given the following HTML code, generate the CSS for it</li>
+                <li>Given the following code, generate the JS and CSS to hide sections using the nav bar</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Page Built by <a href="zielinskidesignfirm.biz/">Zielinski Design Firm</a> &copy; 2025, <em>Certified in <a href="https://www.freecodecamp.org/certification/BZombee/responsive-web-design">Responsive Web Design</a></em></p>
+    </footer>
+    <script>
+        function showSection(sectionId) {
+          const sections = document.querySelectorAll('section');
+          sections.forEach((section) => {
+            section.classList.remove('active');
+          });
+  
+          const activeSection = document.getElementById(sectionId);
+          activeSection.classList.add('active');
+        }
+        
+        window.onload = function() {
+          showSection('what');
+        };
+    </script>
+  </body>
+</html>
