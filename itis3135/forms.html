@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Brian Zielinski Brawny Zebra || ITIS 3135 || HTML Forms</title>
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles/default.css">
+    </head>
+    <body>
+        <header>
+            <div data-include="components/header.html"></div>
+        </header>
+        <main>
+            <h2>HTML Forms</h2>
+            <section class="contact-form">
+                <h3>Enter Your Information</h3>
+                <form action="#">
+                <fieldset>
+                    <legend>Contact Information</legend>
+            
+                    <label for="full-name">Full Name:</label>
+                    <input id="full-name" name="fullName" type="text" placeholder="Jane Doe" required>
+            
+                    <label for="phone-number">Phone Number:</label>
+                    <input id="phone-number" name="phoneNumber" type="tel" placeholder="123-456-7890" required>
+            
+                    <label for="email-address">Email Address:</label>
+                    <input id="email-address" name="email" type="email" placeholder="jane.doe@example.com" required>
+            
+                    <!-- Transportation Options -->
+                    <p>Transportation Options (check all that apply):</p>
+                    <div class="inline-options">
+                    <label><input type="checkbox" name="transportation" value="bike"> Bike</label>
+                    <label><input type="checkbox" name="transportation" value="car"> Car</label>
+                    <label><input type="checkbox" name="transportation" value="boat"> Boat</label>
+                    </div>
+
+                    <!-- Preferred Programming Language -->
+                    <p>Preferred Programming Language:</p>
+                    <div class="inline-options">
+                    <label><input type="radio" name="preferredLanguage" value="HTML"> HTML</label>
+                    <label><input type="radio" name="preferredLanguage" value="CSS"> CSS</label>
+                    <label><input type="radio" name="preferredLanguage" value="JavaScript"> JavaScript</label>
+                    </div>
+            
+                    <label for="experience-level">Experience Level:</label>
+                    <select name="experienceLevel" id="experience-level">
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                        <option value="expert">Expert</option>
+                    </select>
+            
+                    <br><br>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </fieldset>
+            </form>
+            </section>
+        </main>
+        <footer>
+            <div data-include="components/footer.html"></div>
+        </footer>
+        <script>
+            document.getElementById("validation-link-html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+                    document.getElementById("validation-link-css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>
+        <script src="scripts/include.js"></script>  
+    </body>     
+</html>
