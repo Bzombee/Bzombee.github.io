@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Brian Zielinski Brawny Zebra || ITIS 3135 || BYO Intro</title>
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles/default.css">
+    </head>
+    <body>
+        <header>
+            <div data-include="components/header.html"></div>
+        </header>
+        <main>
+            <h2>BYO Intro</h2>
+            <section class="contact-form">
+                <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
+                <form action="#">
+                <fieldset>
+                    <legend>Contact Information</legend>
+            
+                    <label for="name">Name:</label>
+                    <input id="name" name="name" type="text" placeholder="name" required>
+
+                    <label for="mascot">Mascot (adjective from first initial, animal from last initial):</label>
+                    <input id="mascot" name="mascot" type="text" placeholder="mascot" required>
+
+                    <label for="name">Image:</label>
+                    <input id="image" name="image" type="file" accept=".png, .jpg, .jpeg" required>
+
+                    <label for="image-caption">Image Caption:</label>
+                    <input id="image-caption" name="image-caption" type="text" placeholder="image-caption" required>
+
+                    <label for="personal-background">Personal Background:</label>
+                    <input id="personal-background" name="personal-background" type="text" placeholder="personal-background" required>
+
+                    <label for="professional-background">Professional Background:</label>
+                    <input id="professional-background" name="professional-background" type="text" placeholder="professional-background" required>
+
+                    <label for="academic-background">Academic Background:</label>
+                    <input id="academic-background" name="academic-background" type="text" placeholder="academic-background" required>
+
+                    <label for="web-dev-background">Background in Web Development:</label>
+                    <input id="web-dev-background" name="web-dev-background" type="text" placeholder="web-dev-background" required>
+
+                    <label for="computer-platform">Primary Computer Platform:</label>
+                    <input id="computer-platform" name="computer-platform" type="text" placeholder="computer-platform" required>
+
+                    <!-- courses -->
+
+                    <label for="funny-thing">Funny Thing:</label>
+                    <input id="funny-thing" name="funny-thing" type="text" placeholder="funny-thing">
+
+                    <label for="anything-else">Anything Else?:</label>
+                    <input id="anything-else" name="anything-else" type="text" placeholder="anything-else">
+
+                    <label for="understand-checkbox">I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.</label>
+                    <input type="checkbox" id="understand-checkbox" name="understand-checkbox" value="Yes">
+
+                    <br><br>
+                    <button type="submit" value="Submit">Submit</button>
+                    <button type="reset" value="Reset">Reset</button>
+                </fieldset>
+            </form>
+            </section>
+        </main>
+        <footer>
+            <div data-include="components/footer.html"></div>
+        </footer>
+        <script>
+            document.getElementById("validation-link-html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+                    document.getElementById("validation-link-css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>
+        <script src="scripts/HTMLInclude.js"></script>  
+    </body>     
+</html>
