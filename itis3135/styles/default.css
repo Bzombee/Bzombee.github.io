@@ -23,13 +23,27 @@ a:hover {
     text-decoration: underline;
 }
 
-.bullet-points {
+/* .bullet-points {
     text-align: left;
     display: flex;
     justify-content: center;
     list-style-position: inside;
     padding: 0;
+} */
+
+.bullet-points {
+    text-align: left;
+    display: block;
+    justify-content: center;
+    padding: 0 auto;
 }
+
+.bullet-points ul {
+    list-style-position: inside;
+    padding-left: 50px;
+    margin: 0 auto;
+}
+
 
 ul ul {
     list-style: circle;
