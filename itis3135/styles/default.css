@@ -145,6 +145,8 @@ nav {
     font-family: Arial, sans-serif;
     width: 100%;
     border-radius: 4px;
+    height: 25px; /* Set the height of the input fields */
+    font-size: 16px; /* Optional: Increase font size for better readability */
   }
   
   /* Button styles */
@@ -174,6 +176,26 @@ nav {
     align-items:center;
     gap: 5px;
   }
+
+  #courses-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between courses */
+}
+
+    #courses-container div {
+        display: flex;
+        align-items: center;
+        gap: 10px; /* Space between the input and the delete button */
+    }
+
+    #courses-container input {
+        flex-grow: 1; /* Makes the input take up available space */
+    }
+
+    #courses-container button {
+        margin-left: 10px; /* Adds space between the input and the delete button */
+    }
   
 
 /* Mobile Devices */

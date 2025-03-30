@@ -20,49 +20,53 @@
                     <legend>Contact Information</legend>
             
                     <label for="name">Name:</label>
-                    <input id="name" name="name" type="text" placeholder="name" required>
+                    <input id="name" name="name" type="text" placeholder="John Doe" value="Brian Zielinski" required>
 
                     <label for="mascot">Mascot (adjective from first initial, animal from last initial):</label>
-                    <input id="mascot" name="mascot" type="text" placeholder="mascot" required>
+                    <input id="mascot" name="mascot" type="text" placeholder="Janky Deer" value="Brawny Zebra" required>
 
                     <label for="name">Image:</label>
-                    <input id="image" name="image" type="file" accept=".png, .jpg, .jpeg" required>
+                    <input id="image" name="image" type="file" accept=".png, .jpg, .jpeg">
+                    <img id="preview-image" src="./images/mepicture_reduce.jpg" alt="Default Image" style="max-width: 250px; display: block; margin-bottom: 10px;">
 
                     <label for="image-caption">Image Caption:</label>
-                    <input id="image-caption" name="image-caption" type="text" placeholder="image-caption" required>
+                    <input id="image-caption" name="image-caption" type="text" placeholder="Describe the picture" value="High school prom photo (it’s a good photo, what can I say)" required>
 
                     <label for="personal-background">Personal Background:</label>
-                    <input id="personal-background" name="personal-background" type="text" placeholder="personal-background" required>
+                    <input id="personal-background" name="personal-background" type="text" placeholder="My name is..." value="My name is Brian Zielinski and I am from Wake Forest, North Carolina. I chose to attend UNC Charlotte because of their computer science program and the community and organizations it offers. I am one of three brothers and my family has two dogs that I love very much. I am looking forward to another great semester!" required>
 
                     <label for="professional-background">Professional Background:</label>
-                    <input id="professional-background" name="professional-background" type="text" placeholder="professional-background" required>
+                    <input id="professional-background" name="professional-background" type="text" placeholder="I did X job" value="Currently a Peer Tutor for the UCAE in which I tutor Matrices and Linear Algebra, Statistics (2122), Data Structures, Intro to Computer Systems, and Databases." required>
 
                     <label for="academic-background">Academic Background:</label>
-                    <input id="academic-background" name="academic-background" type="text" placeholder="academic-background" required>
+                    <input id="academic-background" name="academic-background" type="text" placeholder="In school I did..." value="Graduated high school (obviously) with a 4.0 unweighted GPA. Currently a Junior CCI and University Honors Student at UNC Charlotte. Majoring in Computer science, concentrating in Cybersecurity, and minoring in Mathematics." required>
 
                     <label for="web-dev-background">Background in Web Development:</label>
-                    <input id="web-dev-background" name="web-dev-background" type="text" placeholder="web-dev-background" required>
+                    <input id="web-dev-background" name="web-dev-background" type="text" placeholder="My experience with web development was like..." value="I remember doing some of HTML and coding in a middle school elective but I also have experience with Java, Python, C, and SQL from college courses." required>
 
                     <label for="computer-platform">Primary Computer Platform:</label>
-                    <input id="computer-platform" name="computer-platform" type="text" placeholder="computer-platform" required>
+                    <input id="computer-platform" name="computer-platform" type="text" placeholder="I like using X computer platform at Y" value="Windows 11 on laptop while at school and Windows 10 desktop while at home." required>
 
-                    <!-- courses -->
+                    <label>Courses:</label>
+                    <div id="courses-container"></div>
+                    <button type="button" id="add-course-btn">Add Course</button>
 
                     <label for="funny-thing">Funny Thing:</label>
-                    <input id="funny-thing" name="funny-thing" type="text" placeholder="funny-thing">
+                    <input id="funny-thing" name="funny-thing" type="text" placeholder="Something funny about me is..." value="Sometimes I really hate computers and technology despite being a computer science major.">
 
                     <label for="anything-else">Anything Else?:</label>
-                    <input id="anything-else" name="anything-else" type="text" placeholder="anything-else">
+                    <input id="anything-else" name="anything-else" type="text" placeholder="A fun fact about myself..." value="Dogs are my favorite pet.">
 
                     <label for="understand-checkbox">I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.</label>
-                    <input type="checkbox" id="understand-checkbox" name="understand-checkbox" value="Yes">
+                    <input type="checkbox" id="understand-checkbox" name="understand-checkbox" value="Yes" required>
 
                     <br><br>
                     <button type="submit" value="Submit">Submit</button>
-                    <button type="reset" value="Reset">Reset</button>
+                    <button id ="resetButton" value="Reset">Reset</button>
                 </fieldset>
             </form>
             </section>
+            <div id="result-container"></div>
         </main>
         <footer>
             <div data-include="components/footer.html"></div>
@@ -72,5 +76,6 @@
                     document.getElementById("validation-link-css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
         </script>
         <script src="scripts/HTMLInclude.js"></script>  
+        <script src="scripts/survey.js"></script>
     </body>     
 </html>
