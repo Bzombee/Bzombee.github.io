@@ -18,9 +18,19 @@ a {
     text-decoration: none;
 }
 
+
+
 a:hover {
     color: #D99E32;
     text-decoration: underline;
+}
+
+footer {
+    margin-top: 30px;
+}
+
+p {
+    text-align: left;
 }
 
 /* .bullet-points {
@@ -44,6 +54,9 @@ a:hover {
     margin: 0 auto;
 }
 
+ul {
+    text-align: left;
+}
 
 ul ul {
     list-style: circle;
@@ -211,7 +224,30 @@ nav {
         margin-left: 10px; /* Adds space between the input and the delete button */
     }
   
+    /* Adjust form layout */
+    .form-row {
+        display: flex;
+        align-items: left;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
 
+    .form-row label {
+        flex: 1; /* Labels take up space on the left */
+        text-align: left;
+        padding-right: 10px;
+    }
+
+    .form-row input {
+        flex: 4; /* Inputs take up space on the right */
+        width: auto; /* Prevents full-width stretching */
+        min-width: 200px; /* Ensures inputs are not too small */
+        padding: 5px;
+    }
+
+    .hide {
+        display: none;
+    }
 /* Mobile Devices */
 @media screen and (min-width: 370px) and (max-width: 600px) {
     main {

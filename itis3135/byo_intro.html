@@ -14,50 +14,93 @@
         <main>
             <h2>BYO Intro</h2>
             <section class="contact-form">
-                <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
+                <h3 id="instruction-header">Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
                 <form action="#">
                 <fieldset>
-                    <legend>Contact Information</legend>
-            
-                    <label for="name">Name:</label>
-                    <input id="name" name="name" type="text" placeholder="John Doe" value="Brian Zielinski" required>
+                    <legend>BYO Introduction Form</legend>
 
-                    <label for="mascot">Mascot (adjective from first initial, animal from last initial):</label>
-                    <input id="mascot" name="mascot" type="text" placeholder="Janky Deer" value="Brawny Zebra" required>
+                    <div class="form-row">
+                        <label for="first-name">First Name</label>
+                        <input id="first-name" name="first-name" type="text" placeholder="John" value="Brian" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <label for="middle-initial">Middle Initial (optional)</label>
+                        <input id="middle-initial" name="middle-initial" type="text" maxlength="1" placeholder="J" value="H">
+                    </div>
+                    
+                    <div class="form-row">
+                        <label for="last-name">Last Name</label>
+                        <input id="last-name" name="last-name" type="text" placeholder="Doe" value="Zielinski" required>
+                    </div>
 
-                    <label for="name">Image:</label>
-                    <input id="image" name="image" type="file" accept=".png, .jpg, .jpeg">
+                    <div class="form-row">
+                        <label for="nickname">Nickname (optional)</label>
+                        <input id="nickname" name="nickname" type="text" placeholder="Anonymous" value="Brain">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="first-mascot">Adjective from first initial</label>
+                        <input id="first-mascot" name="first-mascot" type="text" placeholder="Janky" value="Brawny" required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="last-mascot">Animal from last initial</label>
+                        <input id="last-mascot" name="last-mascot" type="text" placeholder="Deer" value="Zebra" required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="image">Image</label>
+                        <input id="image" name="image" type="file" accept=".png, .jpg, .jpeg">
+                    </div>
+                    <p style="text-align: left; margin-top: auto;">Image Preview</p>
                     <img id="preview-image" src="./images/mepicture_reduce.jpg" alt="Default Image" style="max-width: 250px; display: block; margin-bottom: 10px;">
 
-                    <label for="image-caption">Image Caption:</label>
-                    <input id="image-caption" name="image-caption" type="text" placeholder="Describe the picture" value="High school prom photo (it’s a good photo, what can I say)" required>
+                    <div class="form-row">
+                        <label for="image-caption">Image Caption</label>
+                        <input id="image-caption" name="image-caption" type="text" placeholder="Describe the picture" value="High school prom photo (it’s a good photo, what can I say)" required>
+                    </div>
 
-                    <label for="personal-background">Personal Background:</label>
-                    <input id="personal-background" name="personal-background" type="text" placeholder="My name is..." value="My name is Brian Zielinski and I am from Wake Forest, North Carolina. I chose to attend UNC Charlotte because of their computer science program and the community and organizations it offers. I am one of three brothers and my family has two dogs that I love very much. I am looking forward to another great semester!" required>
+                    <div class="form-row">
+                        <label for="personal-background">Personal Background</label>
+                        <input id="personal-background" name="personal-background" type="text" placeholder="My name is..." value="My name is Brian Zielinski and I am from Wake Forest, North Carolina. I chose to attend UNC Charlotte because of their computer science program and the community and organizations it offers. I am one of three brothers and my family has two dogs that I love very much. I am looking forward to another great semester!" required>
+                    </div>
 
-                    <label for="professional-background">Professional Background:</label>
-                    <input id="professional-background" name="professional-background" type="text" placeholder="I did X job" value="Currently a Peer Tutor for the UCAE in which I tutor Matrices and Linear Algebra, Statistics (2122), Data Structures, Intro to Computer Systems, and Databases." required>
+                    <div class="form-row">
+                        <label for="professional-background">Professional Background</label>
+                        <input id="professional-background" name="professional-background" type="text" placeholder="I did X job" value="Currently a Peer Tutor for the UCAE in which I tutor Matrices and Linear Algebra, Statistics (2122), Data Structures, Intro to Computer Systems, and Databases." required>    
+                    </div>
+                   
+                    <div class="form-row">
+                        <label for="academic-background">Academic Background</label>
+                        <input id="academic-background" name="academic-background" type="text" placeholder="In school I did..." value="Graduated high school (obviously) with a 4.0 unweighted GPA. Currently a Junior CCI and University Honors Student at UNC Charlotte. Majoring in Computer science, concentrating in Cybersecurity, and minoring in Mathematics." required>
+                    </div>
 
-                    <label for="academic-background">Academic Background:</label>
-                    <input id="academic-background" name="academic-background" type="text" placeholder="In school I did..." value="Graduated high school (obviously) with a 4.0 unweighted GPA. Currently a Junior CCI and University Honors Student at UNC Charlotte. Majoring in Computer science, concentrating in Cybersecurity, and minoring in Mathematics." required>
+                    <div class="form-row">
+                        <label for="web-dev-background">Background in Web Development</label>
+                        <input id="web-dev-background" name="web-dev-background" type="text" placeholder="My experience with web development was like..." value="I remember doing some of HTML and coding in a middle school elective but I also have experience with Java, Python, C, and SQL from college courses." required>
+                    </div>
 
-                    <label for="web-dev-background">Background in Web Development:</label>
-                    <input id="web-dev-background" name="web-dev-background" type="text" placeholder="My experience with web development was like..." value="I remember doing some of HTML and coding in a middle school elective but I also have experience with Java, Python, C, and SQL from college courses." required>
-
-                    <label for="computer-platform">Primary Computer Platform:</label>
-                    <input id="computer-platform" name="computer-platform" type="text" placeholder="I like using X computer platform at Y" value="Windows 11 on laptop while at school and Windows 10 desktop while at home." required>
+                    <div class="form-row">
+                        <label for="computer-platform">Primary Computer Platform</label>
+                        <input id="computer-platform" name="computer-platform" type="text" placeholder="I like using X computer platform at Y" value="Windows 11 on laptop while at school and Windows 10 desktop while at home." required>
+                    </div>
 
                     <label>Courses:</label>
                     <div id="courses-container"></div>
                     <button type="button" id="add-course-btn">Add Course</button>
 
-                    <label for="funny-thing">Funny Thing:</label>
-                    <input id="funny-thing" name="funny-thing" type="text" placeholder="Something funny about me is..." value="Sometimes I really hate computers and technology despite being a computer science major.">
+                    <div class="form-row">
+                        <label for="funny-thing">Funny Thing (optional)</label>
+                        <input id="funny-thing" name="funny-thing" type="text" placeholder="Something funny about me is..." value="Sometimes I really hate computers and technology despite being a computer science major.">
+                    </div>
 
-                    <label for="anything-else">Anything Else?:</label>
-                    <input id="anything-else" name="anything-else" type="text" placeholder="A fun fact about myself..." value="Dogs are my favorite pet.">
+                    <div class="form-row">
+                        <label for="anything-else">Anything Else? (optional)</label>
+                        <input id="anything-else" name="anything-else" type="text" placeholder="A fun fact about myself..." value="Dogs are my favorite pet.">
+                    </div>
 
-                    <label for="understand-checkbox">I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.</label>
+                    <label style="text-align: left;" for="understand-checkbox">I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.</label>
                     <input type="checkbox" id="understand-checkbox" name="understand-checkbox" value="Yes" required>
 
                     <br><br>
