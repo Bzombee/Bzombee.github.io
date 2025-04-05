@@ -1,8 +1,18 @@
+:root {
+    --background-pink: #FFEBEF;     /* light background pink */
+    --header-pink: #FF9FB2;         /* brighter pink for header */
+    --sidebar-purple: #cba7c7;      /* deep purple sidebar */
+    --navbar-bg: #FBDCE2;           /* same as body background */
+    --text-light: #5f5555;          /* white text for dark backgrounds */
+    --text-dark: #2C003E;           /* deep purple for light backgrounds */
+    --footer-bg: #c766bc;           /* dark footer */
+  }  
+
 html, body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: white;
+    background-color: var(--background-pink);
 }
 
 /* Header */
@@ -11,8 +21,8 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #333;
-    color: white;
+    background-color: var(--header-pink);
+    color: var(--text-light);
     z-index: 1000;
     text-align: center;
     padding: 20px 0; /* Add padding to ensure header fits larger text */
@@ -26,30 +36,30 @@ header {
 }
 
 /* Logo on its own line */
-.logo {
+h1 {
     font-size: 36px; /* Larger text size */
     font-weight: bold;
     margin: 0 0 12px 0; /* Adjusted bottom margin for spacing */
 }
 
 /* Navbar on its own line */
-.navbar {
+.header-navbar {
     display: flex;
     gap: 30px;
     justify-content: center; /* Center horizontally */
-    background-color: grey;
+    background-color: var(--navbar-bg);
 }
 
 /* Navbar Links */
-.navbar a {
-    color: white;
+.header-navbar a {
+    color: var(--text-light);
     text-decoration: none;
     font-size: 20px; /* Larger text size */
     font-weight: bold;
     padding: 8px 12px;
 }
 
-.navbar a:hover {
+.header-navbar a:hover {
     text-decoration: underline;
 }
 
@@ -58,36 +68,22 @@ header {
     padding: 20px 0; /* Adjust header padding based on text size */
 }
 
-/* Footer */
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 60px;
-    background-color: #333;
-    color: white;
-    text-align: center;
-    line-height: 60px;
-    z-index: 1000;
-}
-
 /* Sidebar */
-.sidebar {
+aside {
+    min-height: calc(100vh - 60px);
     box-sizing: border-box;
     position: fixed;
-    top: 100px; /* Adjusted to be below the larger header */
-    bottom: 60px; /* Above footer */
+    top: 100px;
     left: 0;
     width: 200px;
-    background-color: #f4f4f4;
+    background-color: var(--sidebar-purple);
     padding: 30px 20px 20px 20px;
-    border-right: 1px solid #ccc;
+    border-right: 2px solid #ccc;
     overflow-y: auto;
 }
 
 /* Main Content */
-.content {
+main {
     margin-left: 200px; /* Width of sidebar */
     padding-top: 120px; /* Adjusted top padding for larger header */
     padding-bottom: 80px; /* Room for footer */
@@ -95,28 +91,58 @@ footer {
     padding-right: 20px;
 }
 
+h2 {
+    text-align: center;
+}
+
 .image-container {
     width: 100%; /* Full width of the content */
     height: 66.67vh; /* 2/3 of the viewport height */
-    margin: 20px 0; /* Add space around the image */
+    margin: 20px 0px; /* Add space around the image */
     display: flex;
     justify-content: center; /* Center image horizontally */
     align-items: center; /* Center image vertically */
 }
 
 .image-container img {
-    max-width: 100%; /* Make sure the image is responsive */
+    max-width: 75%; /* Make sure the image is responsive */
     max-height: 100%; /* Ensure the image fits within the container */
     object-fit: cover; /* Ensure the image covers the area without stretching */
+}
+
+
+/* Footer */
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: var(--footer-bg);
+    color: var(--text-light);
+    text-align: center;
+    line-height: 60px;
+    z-index: 1000;
 }
 
 /* Mobile Devices */
 @media screen and (min-width: 370px) and (max-width: 600px) {
     main {
-        width: 95%;
+        width: 50%;
+        margin-left: 150px;
     }
     body {
         font-size: 110%;
+    }
+    .image-container {
+        height: 30vh;
+        width: 60vw;
+    }
+    aside {
+        box-sizing: border-box;
+        width: 110px;
+        padding: 20px 10px 10px 10px;
+        font-size: 70%;
     }
     /* Test color - Uncomment to test */
     /* body { background-color: red; } */
@@ -125,10 +151,17 @@ footer {
 /* Tablet Devices */
 @media screen and (min-width: 601px) and (max-width: 980px) {
     main {
-        width: 90%;
+        width: 60%;
     }
     body {
         font-size: 115%;
+    }
+    .image-container {
+        height: 40vh;
+        width: 70vw;
+    }
+    .header-navbar a {
+        font-size: 14px; /* Smaller link text */
     }
     /* Test color - Uncomment to test */
     /* body { background-color: orange; } */
@@ -142,6 +175,30 @@ footer {
     body {
         font-size: 120%;
     }
+    .image-container {
+        height: 50vh;
+    }
     /* Test color - Uncomment to test */
     /* body { background-color: yellow; } */
+}
+
+/*Changes header based on screen width*/
+@media screen and (max-width: 600px) {
+    header {
+        padding: 10px 0; /* Less vertical space */
+    }
+
+    h1 {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+
+    .header-navbar {
+        gap: 0.1vw; /* Less spacing */
+        padding: 10px 0;
+    }
+
+    .header-navbar a {
+        font-size: 12px; /* Smaller link text */
+    }
 }
