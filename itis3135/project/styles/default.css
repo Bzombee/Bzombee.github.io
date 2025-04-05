@@ -3,9 +3,9 @@
     --header-pink: #FF9FB2;         /* brighter pink for header */
     --sidebar-purple: #cba7c7;      /* deep purple sidebar */
     --navbar-bg: #FBDCE2;           /* same as body background */
-    --text-light: #5f5555;          /* white text for dark backgrounds */
+    --text-light: #5b4c4c;          /* white text for dark backgrounds */
     --text-dark: #2C003E;           /* deep purple for light backgrounds */
-    --footer-bg: #c766bc;           /* dark footer */
+    --footer-bg: #e37ed7;           /* dark footer */
   }  
 
 html, body {
@@ -75,6 +75,7 @@ aside {
     position: fixed;
     top: 100px;
     left: 0;
+    bottom: 20px;
     width: 200px;
     background-color: var(--sidebar-purple);
     padding: 30px 20px 20px 20px;
@@ -125,11 +126,161 @@ footer {
     z-index: 1000;
 }
 
+/* Biography Section Layout */
+.bio-container {
+    display: flex;
+    align-items: center; /* Vertically align the items in the center */
+    justify-content: flex-start; /* Align items to the left */
+    margin: 30px 0; /* Add spacing above and below */
+}
+
+.bio-image {
+    width: 200px; /* Fixed width for the image */
+    height: 200px; /* Fixed height for the image */
+    border-radius: 50%; /* Optional: makes the image circular */
+    margin-right: 20px; /* Add space between the image and text */
+    object-fit: cover; /* Ensures the image covers the space without stretching */
+}
+
+.bio-text {
+    max-width: 800px; /* Limit the width of the text */
+    font-size: 16px; /* Adjust font size for better readability */
+    color: var(--text-dark); /* Use dark text for contrast */
+}
+
+.bio-text h3 {
+    font-size: 24px; /* Larger font size for the name */
+    margin-bottom: 10px; /* Space below the name */
+}
+
+.bio-text p {
+    line-height: 1.6; /* Increase line spacing for readability */
+}
+
+.instagram-link {
+    font-size: 18px;
+    color: #E4405F; /* Instagram pink */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between the icon and text */
+}
+
+.instagram-link:hover {
+    color: #C13584; /* Slightly darker pink for hover effect */
+}
+
+.instagram-link em {
+    font-size: 20px; /* Adjust the size of the icon */
+}
+
+/* Contact Section */
+#contact {
+    background-color: var(--background-pink);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: var(--text-dark);
+}
+
+/* Form styling */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--sidebar-purple);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    font-size: 16px;
+    color: var(--text-dark);
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    /* padding: 5px; */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+textarea {
+    resize: vertical; /* Allow user to resize the message box */
+}
+
+button {
+    background-color: var(--header-pink);
+    color: var(--text-light);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--footer-bg);
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    #contact {
+        padding: 20px 10px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    input, textarea {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+}
+
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .bio-container {
+        flex-direction: column; /* Stack image and text on smaller screens */
+        align-items: center; /* Center the items horizontally */
+    }
+
+    .bio-image {
+        width: 150px; /* Smaller image on mobile */
+        height: 150px; /* Smaller image on mobile */
+        margin-right: 0; /* Remove margin */
+        margin-bottom: 20px; /* Add space below the image */
+    }
+
+    .bio-text {
+        text-align: center; /* Center-align text on small screens */
+    }
+}
+
 /* Mobile Devices */
 @media screen and (min-width: 370px) and (max-width: 600px) {
     main {
         width: 50%;
-        margin-left: 150px;
+        margin-left: 100px;
     }
     body {
         font-size: 110%;
