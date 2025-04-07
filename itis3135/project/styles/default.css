@@ -157,23 +157,6 @@ footer {
     line-height: 1.6; /* Increase line spacing for readability */
 }
 
-.instagram-link {
-    font-size: 18px;
-    color: #E4405F; /* Instagram pink */
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 10px; /* Space between the icon and text */
-}
-
-.instagram-link:hover {
-    color: #C13584; /* Slightly darker pink for hover effect */
-}
-
-.instagram-link em {
-    font-size: 20px; /* Adjust the size of the icon */
-}
-
 /* Contact Section */
 #contact {
     background-color: var(--background-pink);
