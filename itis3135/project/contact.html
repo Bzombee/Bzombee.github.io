@@ -22,7 +22,7 @@
             <!-- Form currently does nothing -->
             <section id="contact">
                 <h2>Contact Us</h2>
-                <form action="#">
+                <form id="contactForm" action="#">
                     <div class="form-group">
                         <label for="name">Full Name</label>
                         <input type="text" id="name" name="name" required placeholder="Your full name">
@@ -41,6 +41,8 @@
                     <div class="form-group">
                         <button type="submit">Send Message</button>
                     </div>
+
+                    <p id="formFeedback" class="hidden"></p>
                 </form>
             </section>
             
@@ -48,6 +50,8 @@
         <footer>
             <div data-include="components/footer.html"></div>
         </footer>
-        <script src="scripts/HTMLInclude.js"></script>  
+        <script src="scripts/HTMLInclude.js"></script>
+        <!-- Links to the scripting for the form   -->
+        <script src="scripts/form.js"></script>
     </body>     
 </html>

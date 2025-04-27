@@ -6,6 +6,7 @@
         <title>UterUs - Events</title>
         <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="styles/default.css">
+        <link rel="stylesheet" href="styles/jquery-ui-1.14.1.custom/jquery-ui.css">
         <link rel="icon" type="image/x-icon" href="./images/uterus-favicon.png">
     </head>
     <body>
@@ -19,59 +20,122 @@
         </aside>
 
         <main>
-            <div class="image-container">
-                <img src="./images/uterus-logo-small.png" alt="UterUs Logo">
+            <div class="slideshow-container">
+                <div class="slide fade">
+                    <img src="./images/slideshow/Picture1.png" alt="Event Photo 1">
+                </div>
+                <div class="slide fade">
+                    <img src="./images/slideshow/Picture2.png" alt="Event Photo 2">
+                </div>
+                <div class="slide fade">
+                    <img src="./images/slideshow/Picture3.png" alt="Event Photo 3">
+                </div>
+                <div class="slide fade">
+                    <img src="./images/slideshow/Picture4.png" alt="UterUs Logo 4">
+                </div>
+                <div class="slide fade">
+                    <img src="./images/slideshow/Picture5.png" alt="Event Photo 5">
+                </div>
+                <div class="slide fade">
+                    <img src="./images/slideshow/Picture6.png" alt="Event Photo 6">
+                </div>
+                <div class="slide fade">
+                    <img src="./images/slideshow/Picture7.png" alt="UterUs Logo 7">
+                </div>
+                <div class="slide fade">
+                    <img src="./images/slideshow/Picture8.png" alt="Event Photo 8">
+                </div>
+                <div class="slide fade">
+                    <img src="./images/slideshow/Picture9.png" alt="Event Photo 9">
+                </div>
+                <div class="slide fade">
+                    <img src="./images/slideshow/Picture10.png" alt="UterUs Logo 10">
+                </div>
+                <div class="slide fade">
+                    <img src="./images/slideshow/Picture11.png" alt="Event Photo 11">
+                </div>
+                <div class="slide fade">
+                    <img src="./images/slideshow/Picture12.jpg" alt="Event Photo 12">
+                </div>
+                <!-- Use below to add a new slide -->
+                <!-- Make sure height is 480px -->
+                <!-- <div class="slide fade">
+                    <img src="./images/slideshow/PICTURE" alt="Event Photo ##">
+                </div> -->
+                <button class="prev" onclick="changeSlide(-1)">❮ Prev</button>
+                <button class="next" onclick="changeSlide(1)">Next ❯</button>
             </div>
             <h2>Events</h2>
-            <h3>Past Events</h3>
-            <ul>
-                <li>Feb 18, 2025: Craft n Conversation
+            <div id="accordion">
+                <h3>Past Events</h3>
+                <div>
                     <ul>
-                        <li>Collab with Her+, PEP Squad, ECU WGC, and ECU LWCC</li>
+                        <li>Feb 18, 2025: Craft n Conversation
+                            <ul>
+                                <li>Collab with Her+, PEP Squad, ECU WGC, and ECU LWCC</li>
+                            </ul>
+                        </li>
+                        <li>Nov 12, 2024: Craft & Chat</li>
+                        <li>Oct 15, 2024: Women’s Health Pop-Up
+                            <ul>
+                                <li>Collab with Health & Well-Being Hub, Her+, PEP Squad</li>
+                            </ul>
+                        </li>
+                        <li>Apr 20, 2024: Earth Day Celebration</li>
+                        <li>Apr 19, 2024: Earth Day Festival</li>
+                        <li>Oct 26, 2023: ECU Sustainability Day</li>
+                        <li>Sep 6, 2023: Get A Clue</li>
+                        <li>Apr 30, 2023: Maternity Event</li>
+                        <li>Mar 30, 2023: Ask Me Anything Live
+                            <ul>
+                                <li>Collab with Ms. Varney</li>
+                            </ul>
+                        </li>
+                        <li>Nov 30, 2022: Sex Ed Art & Writing Exhibition
+                            <ul>
+                                <li>Collab with ECU LWCC and PEP Squad</li>
+                            </ul>
+                        </li>
+                        <li>Oct 19, 2022: ECU Sustainability Day</li>
+                        <li>Sep 1, 2022: Get A Clue</li>
+                        <li>Nov 23, 2021: Donated 40 menstrual cups to JOY SoupKitchen</li>
                     </ul>
-                </li>
-                <li>Nov 12, 2024: Craft & Chat</li>
-                <li>Oct 15, 2024: Women’s Health Pop-Up
+                </div>
+                <h3>Upcoming Events</h3>
+                <div>
                     <ul>
-                        <li>Collab with Health & Well-Being Hub, Her+, PEP Squad</li>
+                        <li>Apr 23, 2025: Earth Day Festival</li>
                     </ul>
-                </li>
-                <li>Apr 20, 2024: Earth Day Celebration</li>
-                <li>Apr 19, 2024: Earth Day Festival</li>
-                <li>Oct 26, 2023: ECU Sustainability Day</li>
-                <li>Sep 6, 2023: Get A Clue</li>
-                <li>Apr 30, 2023: Maternity Event</li>
-                <li>Mar 30, 2023: Ask Me Anything Live
+                </div>
+                <h3>Monthly Fellowships</h3>
+                <div>
                     <ul>
-                        <li>Collab with Ms. Varney</li>
+                        <li>Feb 26, 2024: Painting canvases</li>
+                        <li>Dec 10, 2024: Christmas gathering with trinket exchange</li>
+                        <li>Oct 3, 2023: Painted Peacock</li>
+                        <li>Aug 13, 2023: First fellowship</li>
                     </ul>
-                </li>
-                <li>Nov 30, 2022: Sex Ed Art & Writing Exhibition
+                </div>
+                <!-- To make a new menu section -->
+                <!-- <h3>Title of section</h3>
+                <div>
+                    <p>Paragraph conent</p>
                     <ul>
-                        <li>Collab with ECU LWCC and PEP Squad</li>
+                        <li>List content</li>
                     </ul>
-                </li>
-                <li>Oct 19, 2022: ECU Sustainability Day</li>
-                <li>Sep 1, 2022: Get A Clue</li>
-                <li>Nov 23, 2021: Donated 40 menstrual cups to JOY SoupKitchen</li>
-            </ul>
-        
-            <h3>Upcoming Events</h3>
-            <ul>
-                <li>Apr 23, 2025: Earth Day Festival</li>
-            </ul>
-        
-            <h3>Monthly Fellowships</h3>
-            <ul>
-                <li>Feb 26, 2024: Painting canvases</li>
-                <li>Dec 10, 2024: Christmas gathering with trinket exchange</li>
-                <li>Oct 3, 2023: Painted Peacock</li>
-                <li>Aug 13, 2023: First fellowship</li>
-            </ul>
+                </div> -->
+              </div>
         </main>
         <footer>
             <div data-include="components/footer.html"></div>
         </footer>
-        <script src="scripts/HTMLInclude.js"></script>  
+        <!-- Dynamic section script -->
+        <script src="scripts/HTMLInclude.js"></script>
+        <!-- Slideshow script -->
+        <script src="scripts/slideshow.js"></script>
+        <!-- jQuery and collapsible menus -->
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+        <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+        <script src="scripts/accordion.js"></script>
     </body>     
 </html>
