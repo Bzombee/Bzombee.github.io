@@ -435,10 +435,10 @@ button:hover {
         height: 15vh;
     }
     .slideshow-container {
-        height: 50vh;
+        height: 65vh;
     }
     .slide img {
-        margin-left: 175px;
+        margin-left: 250px;
     }
     .prev {
         left: 250px;
